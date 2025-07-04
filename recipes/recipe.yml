@@ -43,9 +43,9 @@ modules:
 
   - type: gnome-extensions
     install:
-      - Dash-to-Dock
-      - AppIndicator and KStatusNotifierItem Support
-      - Blur my Shell
+      - 307
+      - 615
+      - 307
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
