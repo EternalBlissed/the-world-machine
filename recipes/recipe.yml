@@ -43,7 +43,7 @@ modules:
 
   - type: gnome-extensions
     install:
-      - Dash To Dock
+      - Dash-to-Dock
       - AppIndicator and KStatusNotifierItem Support
       - Blur my Shell
 
