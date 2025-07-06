@@ -53,6 +53,7 @@ modules:
       # If no repo information is specified, Flathub will be used by default
       install:
         - com.github.wwmm.easyeffects
+        - org.gnome.Extensions
       #remove:
       #  - org.gnome.eog
 
