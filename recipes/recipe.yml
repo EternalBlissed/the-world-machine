@@ -31,9 +31,9 @@ modules:
       - gnome-system-monitor
       - gnome-shell-extension-launch-new-instance
       - gnome-shell-extension-window-list
+      - gnome-shell-extension-apps-menu
+      - gnome-shell-extension-places-status-indicator
       - gnome-classic-session 
-      - gnome-tweaks
-     # - gnome-software
 
   - type: systemd
     system:
@@ -45,7 +45,7 @@ modules:
     install:
       - 307
       - 615
-      - 307
+      - 6139
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
