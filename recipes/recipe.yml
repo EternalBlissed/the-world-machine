@@ -32,7 +32,7 @@ modules:
       - gnome-shell-extension-launch-new-instance
       - gnome-shell-extension-window-list
       - gnome-shell-extension-apps-menu
-      - gnome-shell-extension-places-status-indicator
+      - gnome-shell-extension-places-menu
       - gnome-classic-session 
 
   - type: systemd
