@@ -6,7 +6,7 @@ name: the-world-machine
 description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/secureblue/silverblue-main-hardened
+base-image: ghcr.io/secureblue/kinoite-main-hardened
 image-version: latest # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
@@ -26,14 +26,7 @@ modules:
     install:
       - tailscale
       - mullvad-vpn
-    remove:
-      # Unneeded / legacy GNOME apps removed
-      - gnome-system-monitor
-      - gnome-shell-extension-launch-new-instance
-      - gnome-shell-extension-window-list
-      - gnome-shell-extension-apps-menu
-      - gnome-shell-extension-places-menu
-      - gnome-classic-session 
+    # remove:
 
   - type: systemd
     system:
@@ -41,19 +34,11 @@ modules:
         - tailscaled
         - mullvad-daemon
 
-  - type: gnome-extensions
-    install:
-      - 307
-      - 615
-      - 6139
-
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
       # If no repo information is specified, Flathub will be used by default
       install:
         - com.github.wwmm.easyeffects
-        - org.gnome.Extensions
       #remove:
-      #  - org.gnome.eog
 
